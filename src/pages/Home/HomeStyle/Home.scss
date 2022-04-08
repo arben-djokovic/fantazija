@@ -1,0 +1,72 @@
+.home{
+    background-image: url(https://media.bakingo.com/bakingo-ssr/static/media/photo_cakes_bg.a1c9ec30.png);
+    .homeSection{
+        padding: 100px 0;
+        .popular{
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            grid-gap: 50px;
+            h1{
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Satisfy', cursive;
+            }
+            .lista{
+                text-align: center;
+                width: 90vw;
+                .kolac{
+                    display: inline-block;
+                    margin: 20px;
+                    width: 18vw;
+                    max-width: 180px;
+                    padding: 20px;
+                    flex-direction: column;
+                    border-radius: 8px;
+                    border: 4px solid #fff;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    background-color: rgba(255, 255, 255, 0.8);
+                    min-height: 200px;
+                    text-align: center;
+                    min-width: 120px;
+                    &:hover{
+                        box-shadow: 0 0 10px rgba(255, 34, 137, 0.8);
+                        cursor: pointer;
+                    }
+                    img{
+                        width: 100%;
+                        min-width: 100px;
+                        margin-bottom: 20px;
+                    }
+                    .cijena{
+                        margin-top: 10px;
+                        font-size: 22px;
+                        font-weight: bold;
+                        color: rgb(255,34,137);
+                    }
+                }
+            }
+            .seeMore{
+                border: 2px solid rgb(255,34,137);
+                background-color: rgba(255, 34, 137, 0.8);
+                color: rgb(255, 239, 246);
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: -30px;
+                &:hover{
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .home .homeSection .popular .lista{
+        width: 100vw;
+        .kolac{
+            margin: 10px;
+        }
+    }
+}

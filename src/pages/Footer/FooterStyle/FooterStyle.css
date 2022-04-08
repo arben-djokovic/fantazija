@@ -1,0 +1,52 @@
+.footer {
+  background: url("https://media.bakingo.com/ssr-static/footer.png");
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer section {
+  margin-top: 300px;
+  text-align: center;
+}
+
+.footer section img:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.footer section ul {
+  list-style: none;
+}
+
+.footer section ul li {
+  margin: 20px 0;
+  font-size: 18px;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.596);
+}
+
+.footer section ul li:hover {
+  opacity: .8;
+  color: #990047;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding-top: 200px;
+  }
+  .footer section {
+    margin: 30px;
+  }
+}
+/*# sourceMappingURL=FooterStyle.css.map */

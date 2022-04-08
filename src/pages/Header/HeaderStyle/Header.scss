@@ -1,0 +1,40 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 20vw);
+    padding: 5px 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 213, 233, 0.94);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 18px;
+    .logo{
+        height: 60px;
+        cursor: pointer;
+        &:hover{
+            opacity: .8;
+        }
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        grid-gap: 4vw;
+        li{
+            cursor: pointer;
+            &:hover{
+                opacity: .8;
+            color: rgb(156, 0, 104);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .header{
+        flex-direction: column;
+        ul{
+            grid-gap: 8vw;
+        }
+    }
+}
