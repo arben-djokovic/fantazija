@@ -1,0 +1,65 @@
+.menu {
+  background-image: url(https://media.bakingo.com/bakingo-ssr/static/media/photo_cakes_bg.a1c9ec30.png);
+}
+
+.menu .menuSection {
+  padding: 150px 0vw;
+}
+
+.menu .menuSection h1 {
+  margin-left: 10vw;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.menu .menuSection .menuList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 100px 5vw;
+}
+
+.menu .menuSection .menuList div h2 {
+  margin-bottom: 30px;
+  color: #ff2289;
+}
+
+.menu .menuSection .menuList div ul {
+  font-size: 20px;
+}
+
+.menu .menuSection .menuList div ul li {
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  .menu .menuSection h2 {
+    text-align: center;
+  }
+  .menu .menuSection .menuList {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    grid-gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .menu .menuSection .menuList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 50px;
+    padding: 0 5vw;
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=MenuStyle.css.map */

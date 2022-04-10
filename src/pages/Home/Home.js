@@ -15,9 +15,6 @@ export default function Home() {
     setTorte(Storage.torte)
     setTorteSlika(Storage.tortaSlike)
   },[])
-  useEffect(()=>{
-    window.scrollTo(0, 0)
-  },[window.location.href])
   const navigate = useNavigate()
   return (
     <div className='home'>
@@ -26,13 +23,15 @@ export default function Home() {
           <section className='popular'>
             <h1>Popularni Kolaci</h1>
             <div className="lista">
-              {kolaci.map(kolac => {
-                return(<div key={kolac.id} onClick={()=>{navigate('/kolac/' + kolac.id)}} className='kolac'>
-                  <img src={kolac.slika} alt="" />
-                  <h3>{kolac.ime}</h3>
-                  <p>{kolac.kratakOpis}</p>
-                  <p className='cijena'>{kolac.cijena} $</p>
-                </div>)
+              {kolaci.map((kolac, i) => {
+                if(i <= 3){
+                  return(<div key={kolac.id} onClick={()=>{navigate('/kolac/' + kolac.id)}} className='kolac'>
+                    <img src={kolac.slika} alt="" />
+                    <h3>{kolac.ime}</h3>
+                    <p>{kolac.kratakOpis}</p>
+                    <p className='cijena'>{kolac.cijena} $</p>
+                  </div>)
+                }
               })}
             </div>
             <div onClick={()=>{navigate('/kolaci')}} className="seeMore">See More</div>
@@ -40,13 +39,15 @@ export default function Home() {
           <section className='popular'>
             <h1>Popularne Torte</h1>
             <div className="lista">
-              {torte.map(torta => {
+              {torte.map((torta, i) => {
+                if(i <= 3){
                 return(<div key={torta.id} onClick={()=>{navigate('/torta/' + torta.id)}} className='kolac'>
                   <img src={torta.slika} alt="" />
                   <h3>{torta.ime}</h3>
                   <p>{torta.kratakOpis}</p>
                   <p className='cijena'>{torta.cijena} $</p>
                 </div>)
+                }
               })}
             </div>
             <div onClick={()=>{navigate('/torte')}} className="seeMore">See More</div>
@@ -54,13 +55,15 @@ export default function Home() {
           <section className='popular'>
             <h1>Torte sa slikom</h1>
             <div className="lista">
-              {torteSlika.map(torta => {
+              {torteSlika.map((torta, i) => {
+                if(i <= 3){
                 return(<div key={torta.id} onClick={()=>{navigate('/torta-slika/' + torta.id)}} className='kolac'>
                   <img src={torta.slika} alt="" />
                   <h3>{torta.ime}</h3>
                   <p>{torta.kratakOpis}</p>
                   <p className='cijena'>{torta.cijena} $</p>
                 </div>)
+                }
               })}
             </div>
           </section>

@@ -27,6 +27,67 @@ export default {
             slika: 'https://media.bakingo.com/fruit@2x_1_0.png',
             cijena: '2',
             id: 3
+          },{
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/fruit@2x_1_0.png',
+            cijena: '2',
+            id: 4
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/fruit@2x_1_0.png',
+            cijena: '2',
+            id: 5
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/fruit@2x_1_0.png',
+            cijena: '2',
+            id: 6
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/fruit@2x_1_0.png',
+            cijena: '2',
+            id: 7
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/fruit@2x_1_0.png',
+            cijena: '2',
+            id: 8
+          },{
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/fruit@2x_1_0.png',
+            cijena: '2',
+            id: 9
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/fruit@2x_1_0.png',
+            cijena: '2',
+            id: 10
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/fruit@2x_1_0.png',
+            cijena: '2',
+            id: 11
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/fruit@2x_1_0.png',
+            cijena: '2',
+            id: 12
           }
     ],
     torte: [
@@ -57,6 +118,62 @@ export default {
             slika: 'https://media.bakingo.com/sq-pineapple-cake0022pifr-E.jpg?tr=h-265,w-265',
             cijena: '2',
             id: 3
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/sq-pineapple-cake0022pifr-E.jpg?tr=h-265,w-265',
+            cijena: '2',
+            id: 4
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/sq-pineapple-cake0022pifr-E.jpg?tr=h-265,w-265',
+            cijena: '2',
+            id: 5
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/sq-pineapple-cake0022pifr-E.jpg?tr=h-265,w-265',
+            cijena: '2',
+            id: 6
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/sq-pineapple-cake0022pifr-E.jpg?tr=h-265,w-265',
+            cijena: '2',
+            id: 7
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/sq-pineapple-cake0022pifr-E.jpg?tr=h-265,w-265',
+            cijena: '2',
+            id: 8
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/sq-pineapple-cake0022pifr-E.jpg?tr=h-265,w-265',
+            cijena: '2',
+            id: 9
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/sq-pineapple-cake0022pifr-E.jpg?tr=h-265,w-265',
+            cijena: '2',
+            id: 10
+          },
+          {
+            ime: 'Rafaelo',
+            kratakOpis: 'Ukus bourbon vanile',
+            slika: 'https://media.bakingo.com/sq-pineapple-cake0022pifr-E.jpg?tr=h-265,w-265',
+            cijena: '2',
+            id: 11
           }
     ],
     tortaSlike: [

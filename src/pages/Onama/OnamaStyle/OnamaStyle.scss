@@ -1,0 +1,58 @@
+.onama{
+    background-image: url(https://media.bakingo.com/bakingo-ssr/static/media/photo_cakes_bg.a1c9ec30.png);
+    .onamaSection{
+        padding: 150px 0vw;
+        &>h1{
+            margin-left: 10vw;
+            font-family: 'Gloria Hallelujah', cursive;
+        }
+        section{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10%;
+            padding: 0 5vw;
+            margin-top: 80px;
+            justify-content: center;
+            .linkMaps{
+                color: purple;
+                text-decoration: underline;
+                cursor: pointer;
+                font-size: 19px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bold;
+                text-shadow: 1px 1px 3px rgb(255, 255, 255);
+                &:hover{
+                    opacity: .8;
+                }
+            }
+            .aboutUs{
+                padding: 10px 0;
+                text-align: center;
+                h1{
+                    margin-bottom: 30px;
+                    font-size: 30px;
+                }
+                p{
+                    max-width: 550px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.leaflet-container{
+    margin-top: 20px;
+    width: 100%;
+    z-index: 1;
+    height: 400px;
+}
+@media only screen and (max-width: 800px) {
+    .onama .onamaSection section{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+        grid-gap: 80px;
+    }
+}

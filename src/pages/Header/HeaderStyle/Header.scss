@@ -10,6 +10,7 @@
     background-color: rgba(255, 213, 233, 0.94);
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 18px;
+    z-index: 20;
     .logo{
         height: 60px;
         cursor: pointer;
@@ -19,8 +20,9 @@
     }
     ul{
         list-style: none;
-        display: flex;
-        grid-gap: 4vw;
+        width: 65%;
+        display: flex  ;
+        justify-content: space-around;
         li{
             cursor: pointer;
             &:hover{
@@ -28,13 +30,72 @@
             color: rgb(156, 0, 104);
             }
         }
+        .linija{
+            cursor: default;
+            &:hover{
+                opacity: 1;
+                color: unset;
+            }
+        }
     }
 }
-@media only screen and (max-width: 600px) {
+.openNav{
+    display: none;
+}
+.phone{
+    display: none;
+    img{
+        width: 50vw;
+    }
+}
+@media only screen and (max-width: 800px) {
     .header{
         flex-direction: column;
         ul{
-            grid-gap: 8vw;
+            display: flex ;
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    
+.phone{
+    display: block;
+}
+    .header{ 
+        flex-direction: row;
+        .openNav{
+            display: block;
+            z-index: 100;
+            .fa{
+                font-size: 30px;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+        ul{
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(252, 169, 209);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.4s;
+            li{
+                font-size: 23px;
+            }
+            .linija{
+                color: rgba(0, 0, 0, 0.171);
+            }
+        }
+        .openHeader{
+            opacity: 1;
         }
     }
 }

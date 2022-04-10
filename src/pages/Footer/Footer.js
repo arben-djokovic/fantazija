@@ -17,14 +17,15 @@ export default function Footer() {
                 <li onClick={()=>{navigate('/')}}>Home</li>
                 <li onClick={()=>{navigate('/torte')}}>Torte</li>
                 <li onClick={()=>{navigate('/kolaci')}}>Kolaci</li>
-                <li onClick={()=>{navigate('/ostalo')}}>Ostalo</li>
+                <li onClick={()=>{navigate('/menu')}}>Menu</li>
+                <li onClick={()=>{navigate('/o-nama')}}>O nama</li>
             </ul>
         </section>
         <section>
             <h2>Conact us:</h2>
-            <ul>
-                <li><a href='tel:+38269405596'><i class="fa fa-phone" aria-hidden="true"></i> +38269405596</a></li>
-                <li><a target="_blank" href='https://www.instagram.com/fantazija20/'><i class="fa fa-instagram" aria-hidden="true"></i> fantazija20</a></li>
+            <ul className='listaContact'>
+                <li><a href='tel:+38269405596'><i className="fa fa-phone" aria-hidden="true"></i> +38269405596</a></li>
+                <li><a target="_blank" href='https://www.instagram.com/fantazija20/'><i className="fa fa-instagram" aria-hidden="true"></i> fantazija20</a></li>
             </ul>
         </section>
     </div>

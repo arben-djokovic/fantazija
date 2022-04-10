@@ -9,7 +9,13 @@
     section{
         margin-top: 300px;
         text-align: center;
+        h2{
+            color: rgb(255,34,137);
+        }
         img{
+            width: 30vw;
+            min-width: 200px;
+            max-width: 300px;
             &:hover{
                 opacity: .8;
                 cursor: pointer;
