@@ -26,7 +26,7 @@ export default function Home() {
               {kolaci.map((kolac, i) => {
                 if(i <= 3){
                   return(<div key={kolac.id} onClick={()=>{navigate('/kolac/' + kolac.id)}} className='kolac'>
-                    <img src={kolac.slika} alt="" />
+                    <img src={kolac.slika} alt="Fantazija" />
                     <h3>{kolac.ime}</h3>
                     <p>{kolac.kratakOpis}</p>
                     <p className='cijena'>{kolac.cijena} $</p>
@@ -42,7 +42,7 @@ export default function Home() {
               {torte.map((torta, i) => {
                 if(i <= 3){
                 return(<div key={torta.id} onClick={()=>{navigate('/torta/' + torta.id)}} className='kolac'>
-                  <img src={torta.slika} alt="" />
+                  <img src={torta.slika} alt="Fantazija" />
                   <h3>{torta.ime}</h3>
                   <p>{torta.kratakOpis}</p>
                   <p className='cijena'>{torta.cijena} $</p>
@@ -58,7 +58,7 @@ export default function Home() {
               {torteSlika.map((torta, i) => {
                 if(i <= 3){
                 return(<div key={torta.id} onClick={()=>{navigate('/torta-slika/' + torta.id)}} className='kolac'>
-                  <img src={torta.slika} alt="" />
+                  <img src={torta.slika} alt="Fantazija" />
                   <h3>{torta.ime}</h3>
                   <p>{torta.kratakOpis}</p>
                   <p className='cijena'>{torta.cijena} $</p>

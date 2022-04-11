@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import Footer from '../Footer/Footer';
 import Header from './../Header/Header';
 import './MenuStyle/MenuStyle.css'
+import {Helmet} from "react-helmet";
 
 export default function Menu() {
     useEffect(()=>{
@@ -9,6 +10,10 @@ export default function Menu() {
     },[])
   return (
     <div className='menu'>
+    <Helmet>
+      <title>Fantazija - online menu - meni</title>
+      <meta name="description" content={"Fantazija - Tuzi. Fantazija - online menu - meni"} />
+    </Helmet>
         <Header />
         <div className="menuSection">
             <h1>Nas menu:</h1>

@@ -24,22 +24,11 @@
           justify-content: center;
 }
 
-.onama .onamaSection section .linkMaps {
-  color: purple;
-  text-decoration: underline;
-  cursor: pointer;
-  font-size: 19px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px white;
-}
-
-.onama .onamaSection section .linkMaps:hover {
-  opacity: .8;
-}
-
 .onama .onamaSection section .aboutUs {
   padding: 10px 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-align: center;
 }
 
@@ -55,11 +44,54 @@
   font-size: 20px;
 }
 
+.onama .onamaSection section .aboutUs .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 10%;
+  margin-top: 30px;
+}
+
+.onama .onamaSection section .aboutUs .icons .fa {
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.onama .onamaSection section .aboutUs .icons .fa:hover {
+  opacity: .9;
+}
+
+.onama .onamaSection section .aboutUs .icons .fa-phone {
+  background-color: purple;
+  color: white;
+}
+
+.onama .onamaSection section .aboutUs .icons .fa-instagram {
+  color: white;
+  background: #f09433;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.onama .onamaSection section .aboutUs .icons .fa-map-marker {
+  background-color: #242424;
+  color: white;
+  padding: 15px 23px;
+}
+
 .leaflet-container {
   margin-top: 20px;
   width: 100%;
   z-index: 1;
   height: 400px;
+  border: 1px solid gray;
 }
 
 @media only screen and (max-width: 800px) {

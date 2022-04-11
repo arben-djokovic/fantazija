@@ -1,0 +1,100 @@
+.kolac {
+  background-image: url(https://media.bakingo.com/bakingo-ssr/static/media/photo_cakes_bg.a1c9ec30.png);
+}
+
+.kolac .kolacSection {
+  padding: 150px 0vw;
+}
+
+.kolac .kolacSection > h1 {
+  margin-left: 10vw;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.kolac .kolacSection .kolacInfos {
+  margin-top: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (48vw)[2];
+      grid-template-columns: repeat(2, 48vw);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.kolac .kolacSection .kolacInfos .image-swiper {
+  padding: 50px 10px;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.kolac .kolacSection .kolacInfos .image-swiper .mySwiper {
+  height: 300px;
+}
+
+.kolac .kolacSection .kolacInfos .image-swiper .mySwiper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.kolac .kolacSection .kolacInfos .image-swiper .mySwiper .swiper-pagination-bullets {
+  bottom: 0;
+}
+
+.kolac .kolacSection .kolacInfos .image-swiper .mySwiper .slikaKolaca {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kolac .kolacSection .kolacInfos .aboutKolac {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 23px;
+}
+
+.kolac .kolacSection .kolacInfos .aboutKolac p {
+  width: 90%;
+  max-width: 600px;
+}
+
+.kolac .kolacSection .kolacInfos .aboutKolac .cijena {
+  font-size: 30px;
+  color: #ff0077;
+}
+
+.kolac .kolacSection .kolacInfos .aboutKolac .cijena span {
+  color: #e9006d;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+  .kolac .kolacSection .kolacInfos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 80px;
+    padding: 0 3vw;
+  }
+  .kolac .kolacSection .kolacInfos .image-swiper .mySwiper {
+    height: 250px;
+  }
+  .kolac .kolacSection .kolacInfos .aboutKolac {
+    grid-gap: 30px;
+  }
+}
+/*# sourceMappingURL=KolacStyle.css.map */

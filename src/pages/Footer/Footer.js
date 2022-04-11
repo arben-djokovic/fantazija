@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className='footer'>
         <section>
-            <img onClick={()=>{navigate('/')}} src={logo} alt="" />
+            <img onClick={()=>{navigate('/')}} src={logo} alt="Fantazija" />
             <p>2022 © All right reserved</p>
         </section>
         <section>

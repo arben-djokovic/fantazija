@@ -29,7 +29,7 @@ export default function Header() {
     <div className='header'>
         <img onClick={()=>{navigate('/')}} className='logo' src={logo} alt="Fantazija" />
         <ul ref={navigation}>
-            <li className='phone' onClick={()=>{navigate('/');toggleNav()}}><img src={logo} /></li>
+            <li className='phone' onClick={()=>{navigate('/');toggleNav()}}><img src={logo} alt="Fantazija" /></li>
             <li className='linija phone'>|</li>
             <li onClick={()=>{navigate('/torte');toggleNav()}}>Torte</li>
             <li className='linija'>|</li>

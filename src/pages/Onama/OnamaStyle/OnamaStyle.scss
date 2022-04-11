@@ -13,20 +13,9 @@
             padding: 0 5vw;
             margin-top: 80px;
             justify-content: center;
-            .linkMaps{
-                color: purple;
-                text-decoration: underline;
-                cursor: pointer;
-                font-size: 19px;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-weight: bold;
-                text-shadow: 1px 1px 3px rgb(255, 255, 255);
-                &:hover{
-                    opacity: .8;
-                }
-            }
             .aboutUs{
                 padding: 10px 0;
+                align-self: center;
                 text-align: center;
                 h1{
                     margin-bottom: 30px;
@@ -38,6 +27,38 @@
                     margin-right: auto;
                     font-size: 20px;
                 }
+                .icons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    grid-gap: 10%;
+                    margin-top: 30px;
+                    .fa{
+                        padding: 15px 20px;
+                        border-radius: 50%;
+                        font-size: 28px;
+                        cursor: pointer;
+                        &:hover{
+                            opacity: .9;
+                        }
+                    }
+                    .fa-phone{
+                        background-color: purple;
+                        color: white;
+                    }
+                    .fa-instagram{
+                        color: white;
+                        background: #f09433; 
+                        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+                        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                    }
+                    .fa-map-marker{
+                        background-color: rgb(36, 36, 36);
+                        color: white;
+                        padding: 15px 23px;
+                    }
+                }
             }
         }
     }
@@ -47,6 +68,7 @@
     width: 100%;
     z-index: 1;
     height: 400px;
+    border: 1px solid gray;
 }
 @media only screen and (max-width: 800px) {
     .onama .onamaSection section{
