@@ -24,7 +24,7 @@ export default function Footer() {
         <section>
             <h2>Conact us:</h2>
             <ul className='listaContact'>
-                <li><a href='tel:+38269405596'><i className="fa fa-phone" aria-hidden="true"></i> +38269405596</a></li>
+                <li><a href='tel:+38266125118'><i className="fa fa-phone" aria-hidden="true"></i> +38266125118</a></li>
                 <li><a target="_blank" href='https://www.instagram.com/fantazija20/'><i className="fa fa-instagram" aria-hidden="true"></i> fantazija20</a></li>
             </ul>
         </section>

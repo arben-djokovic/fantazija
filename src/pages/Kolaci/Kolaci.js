@@ -3,12 +3,11 @@ import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import './KolaciStyle/KolaciStyle.css'
 import Storage from '../../Storage'
-import { useNavigate } from 'react-router-dom';
 import {Helmet} from "react-helmet";
+import Card from '../../components/Card'
 
 export default function Kolaci() {
     let [kolaci, setKolaci] = useState([])
-    const navigate = useNavigate()
     useEffect(()=>{
         window.scrollTo(0, 0)
         setKolaci(Storage.kolaci)
@@ -24,12 +23,7 @@ export default function Kolaci() {
             <h1>Kolaci</h1>
             <div className="lista">
               {kolaci.map(kolac => {
-                return(<div key={kolac.id} onClick={()=>{navigate('/kolac/' + kolac.id)}} className='kolac'>
-                  <img src={kolac.slika} alt="Fantazija" />
-                  <h3>{kolac.ime}</h3>
-                  <p>{kolac.kratakOpis}</p>
-                  <p className='cijena'>{kolac.cijena} $</p>
-                </div>)
+                return(<Card key={kolac.id} tortaId={kolac.id} tortaSlika={kolac.slika} tortaIme={kolac.ime} tortaKratakOpis={kolac.kratakOpis} tortaCijena={kolac.cijena} />)
               })}
             </div>
         </div>

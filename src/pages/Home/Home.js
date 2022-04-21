@@ -4,6 +4,7 @@ import './HomeStyle/Home.css'
 import { useNavigate } from 'react-router-dom'
 import Storage from '../../Storage'
 import Footer from '../Footer/Footer'
+import Card from '../../components/Card'
 export default function Home() {
   let [kolaci, setKolaci] = useState([])
   let [torte, setTorte] = useState([])
@@ -25,12 +26,7 @@ export default function Home() {
             <div className="lista">
               {kolaci.map((kolac, i) => {
                 if(i <= 3){
-                  return(<div key={kolac.id} onClick={()=>{navigate('/kolac/' + kolac.id)}} className='kolac'>
-                    <img src={kolac.slika} alt="Fantazija" />
-                    <h3>{kolac.ime}</h3>
-                    <p>{kolac.kratakOpis}</p>
-                    <p className='cijena'>{kolac.cijena} $</p>
-                  </div>)
+                  return(<Card key={kolac.id} tortaId={kolac.id} tortaSlika={kolac.slika} tortaIme={kolac.ime} tortaKratakOpis={kolac.kratakOpis} tortaCijena={kolac.cijena} />)
                 }
               })}
             </div>
@@ -41,12 +37,7 @@ export default function Home() {
             <div className="lista">
               {torte.map((torta, i) => {
                 if(i <= 3){
-                return(<div key={torta.id} onClick={()=>{navigate('/torta/' + torta.id)}} className='kolac'>
-                  <img src={torta.slika} alt="Fantazija" />
-                  <h3>{torta.ime}</h3>
-                  <p>{torta.kratakOpis}</p>
-                  <p className='cijena'>{torta.cijena} $</p>
-                </div>)
+                  return(<Card key={torta.id} tortaId={torta.id} tortaSlika={torta.slika} tortaIme={torta.ime} tortaKratakOpis={torta.kratakOpis} tortaCijena={torta.cijena} />)
                 }
               })}
             </div>
@@ -57,12 +48,7 @@ export default function Home() {
             <div className="lista">
               {torteSlika.map((torta, i) => {
                 if(i <= 3){
-                return(<div key={torta.id} onClick={()=>{navigate('/torta-slika/' + torta.id)}} className='kolac'>
-                  <img src={torta.slika} alt="Fantazija" />
-                  <h3>{torta.ime}</h3>
-                  <p>{torta.kratakOpis}</p>
-                  <p className='cijena'>{torta.cijena} $</p>
-                </div>)
+                  return(<Card key={torta.id} tortaId={torta.id} tortaSlika={torta.slika} tortaIme={torta.ime} tortaKratakOpis={torta.kratakOpis} tortaCijena={torta.cijena} />)
                 }
               })}
             </div>
